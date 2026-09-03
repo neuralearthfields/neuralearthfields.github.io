@@ -1,0 +1,13 @@
+title: Neural Earth Fields
+description: Neural Earth Fields Benchmark & Hackathon
+url: "https://neuralearthfields.github.io"
+baseurl: ""
+
+markdown: kramdown
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor
+
