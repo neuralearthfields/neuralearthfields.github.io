@@ -32,7 +32,9 @@ title:
     <a href="#supporters" aria-label="See all event supporters"><img src="{{ '/assets/images/supporters/meo-lab.png' | relative_url }}" alt="MEO Lab"></a>
     <a href="#supporters" aria-label="See all event supporters"><img src="{{ '/assets/images/supporters/taylor-geospatial.svg' | relative_url }}" alt="Taylor Geospatial Institute"></a>
     <a href="#supporters" aria-label="See all event supporters"><img src="{{ '/assets/images/supporters/asterisk-labs.png' | relative_url }}" alt="Asterisk Labs"></a>
+    {% comment %}Temporarily hidden pending formal ISPRS approval.
     <a href="#supporters" aria-label="See all event supporters"><img src="{{ '/assets/images/supporters/isprs.jpg' | relative_url }}" alt="ISPRS"></a>
+    {% endcomment %}
   </div>
 </aside>
 
@@ -211,10 +213,12 @@ title:
         <img src="{{ '/assets/images/supporters/asterisk-labs.png' | relative_url }}" alt="Asterisk Labs" loading="lazy">
         <span>Asterisk Labs <span aria-hidden="true">↗</span></span>
       </a>
+      {% comment %}Temporarily hidden pending formal ISPRS approval.
       <a class="supporter-card" href="https://www.isprs.org/" target="_blank" rel="noopener noreferrer">
         <img src="{{ '/assets/images/supporters/isprs.jpg' | relative_url }}" alt="International Society for Photogrammetry and Remote Sensing" loading="lazy">
         <span>ISPRS <span aria-hidden="true">↗</span></span>
       </a>
+      {% endcomment %}
     </div>
   </div>
 </section>
