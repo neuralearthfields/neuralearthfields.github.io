@@ -22,31 +22,22 @@ title:
         <a class="button button--secondary" href="#challenge">Learn more →</a>
       </div>
     </div>
-    <div class="hero__globes" aria-hidden="true">
-      <img src="{{ '/assets/images/globe-natural.png' | relative_url }}" alt="" class="hero__globe" loading="eager">
-      <img src="{{ '/assets/images/globe-data.png' | relative_url }}" alt="" class="hero__globe" loading="eager">
-      <img src="{{ '/assets/images/globe-neural.png' | relative_url }}" alt="" class="hero__globe" loading="eager">
-    </div>
+  </div>
+  <div class="hero__visual" aria-hidden="true">
+    <img src="{{ '/assets/images/earth-transformation.png' | relative_url }}" alt="" class="hero__transform-img" loading="eager">
   </div>
 </section>
 
-<div class="transform-strip" aria-hidden="true">
+<div class="transform-strip">
   <div class="container">
     <ol class="transform-steps">
-      <li class="transform-step">
-        <img src="{{ '/assets/images/globe-natural.png' | relative_url }}" alt="">
-        <div><strong>Observation</strong><span>Real-world sensing</span></div>
-      </li>
+      <li class="transform-step"><strong>Observation</strong><span>Real-world sensing</span></li>
       <li class="transform-arrow">→</li>
-      <li class="transform-step">
-        <img src="{{ '/assets/images/globe-data.png' | relative_url }}" alt="">
-        <div><strong>Data</strong><span>Structured geospatial features</span></div>
-      </li>
+      <li class="transform-step"><strong>Data</strong><span>Structured geospatial features</span></li>
       <li class="transform-arrow">→</li>
-      <li class="transform-step">
-        <img src="{{ '/assets/images/globe-neural.png' | relative_url }}" alt="">
-        <div><strong>Neural Field</strong><span>Continuous spatial function</span></div>
-      </li>
+      <li class="transform-step"><strong>Embedding</strong><span>Learned representations</span></li>
+      <li class="transform-arrow">→</li>
+      <li class="transform-step"><strong>Neural Field</strong><span>Continuous spatial function</span></li>
     </ol>
   </div>
 </div>

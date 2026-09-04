@@ -160,6 +160,8 @@ p { margin: 0; }
 /* ── Hero ─────────────────────────────────────────────────────────────── */
 
 .hero {
+  position: relative;
+  overflow: hidden;
   padding: clamp(3.5rem, 10vh, 6rem) 0 clamp(2rem, 6vh, 4rem);
   background:
     radial-gradient(ellipse 70% 55% at 72% 48%, rgba(34, 211, 238, 0.05) 0%, transparent 65%),
@@ -167,16 +169,15 @@ p { margin: 0; }
 }
 
 .hero__inner {
-  display: grid;
-  grid-template-columns: 1.1fr 0.9fr;
-  gap: 2rem 3rem;
-  align-items: center;
+  position: relative;
+  z-index: 1;
 }
 
 .hero__content {
   display: flex;
   flex-direction: column;
   gap: 1.1rem;
+  max-width: 38rem;
 }
 
 .hero__content h1 {
@@ -208,20 +209,23 @@ p { margin: 0; }
   display: none;
 }
 
-/* three globes side by side, white bg fades via CSS mask */
-.hero__globes {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  align-items: center;
-  gap: 0;
+/* 4-globe banner — absolutely spans right half of the hero section */
+.hero__visual {
+  position: absolute;
+  right: -2%;
+  top: 32%;
+  transform: translateY(-50%);
+  width: 68%;
+  pointer-events: none;
+  z-index: 0;
 }
 
-.hero__globe {
+.hero__transform-img {
   width: 100%;
-  aspect-ratio: 1;
-  object-fit: contain;
-  mask-image: radial-gradient(circle at 50% 50%, black 50%, transparent 72%);
-  -webkit-mask-image: radial-gradient(circle at 50% 50%, black 50%, transparent 72%);
+  height: auto;
+  opacity: 0.65;
+  mask-image: linear-gradient(to right, transparent 0%, black 14%, black 96%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 14%, black 96%, transparent 100%);
 }
 
 /* ── Earth transformation strip ───────────────────────────────────────── */
@@ -247,31 +251,17 @@ p { margin: 0; }
 
 .transform-step {
   display: flex;
-  align-items: center;
-  gap: 0.65rem;
-  padding: 0 1.75rem;
-}
-
-.transform-step img {
-  width: 3rem;
-  height: 3rem;
-  object-fit: contain;
-  flex-shrink: 0;
-  mask-image: radial-gradient(circle at 50% 50%, black 48%, transparent 70%);
-  -webkit-mask-image: radial-gradient(circle at 50% 50%, black 48%, transparent 70%);
-}
-
-.transform-step div {
-  display: flex;
   flex-direction: column;
-  gap: 0.1rem;
+  align-items: center;
+  gap: 0.15rem;
+  padding: 0 1.75rem;
+  text-align: center;
 }
 
 .transform-step strong {
   font-size: 0.85rem;
   font-weight: 600;
   color: var(--text);
-  display: block;
 }
 
 .transform-step span {
@@ -549,9 +539,23 @@ p { margin: 0; }
     grid-template-columns: 1fr;
   }
 
-  .hero__globes {
-    max-width: 26rem;
+  /* reset absolute positioning — image flows below the title */
+  .hero__visual {
+    position: static;
+    transform: none;
+    width: 100%;
+    padding: 2rem 1rem 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .hero__transform-img {
+    width: 100%;
+    max-width: 34rem;
     margin: 0 auto;
+    opacity: 0.8;
+    mask-image: linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%);
   }
 
   .content-grid {
@@ -588,4 +592,5 @@ p { margin: 0; }
   .transform-step { padding: 0 0.75rem; }
 
   .supporter-ribbon__inner { gap: 1.5rem; }
+
 }
