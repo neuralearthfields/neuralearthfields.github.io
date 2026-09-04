@@ -539,19 +539,19 @@ p { margin: 0; }
     grid-template-columns: 1fr;
   }
 
-  /* reset absolute positioning — image flows below the title */
+  /* reset absolute positioning — image flows between h1 and subtitle */
   .hero__visual {
     position: static;
     transform: none;
     width: 100%;
-    padding: 2rem 1rem 0;
+    padding: 1rem 0;
     display: flex;
     justify-content: center;
   }
 
   .hero__transform-img {
     width: 100%;
-    max-width: 34rem;
+    max-width: 22rem;
     margin: 0 auto;
     opacity: 0.8;
     mask-image: linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%);

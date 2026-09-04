@@ -15,6 +15,9 @@ title:
     <div class="hero__content">
       <p class="eyebrow">Benchmark &amp; Hackathon</p>
       <h1 id="hero-title">Neural<br>Earth Fields</h1>
+      <div class="hero__visual" aria-hidden="true">
+        <img src="{{ '/assets/images/earth-transformation.png' | relative_url }}" alt="" class="hero__transform-img" loading="eager">
+      </div>
       <p class="hero__subtitle">Learning continuous representations of our planet.</p>
       <p class="hero__details">7–8 December 2026 · University of Bonn</p>
       <div class="button-group">
@@ -22,9 +25,6 @@ title:
         <a class="button button--secondary" href="#challenge">Learn more →</a>
       </div>
     </div>
-  </div>
-  <div class="hero__visual" aria-hidden="true">
-    <img src="{{ '/assets/images/earth-transformation.png' | relative_url }}" alt="" class="hero__transform-img" loading="eager">
   </div>
 </section>
 
