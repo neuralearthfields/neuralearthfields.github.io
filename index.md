@@ -11,19 +11,45 @@ title:
 </aside>
 
 <section class="hero" aria-labelledby="hero-title">
-  <div class="container">
-    <p class="eyebrow">Benchmark &amp; Hackathon</p>
-    <h1 id="hero-title">Neural Earth Fields</h1>
-    <p class="hero__subtitle">Learning continuous representations of our planet.</p>
-    <p class="hero__details">7–8 December 2026 · University of Bonn</p>
-    <p class="hero__tagline">A 24-hour, benchmark-driven hackathon bringing geospatial domain science and artificial intelligence together.</p>
-    <div class="button-group">
-      <a class="button" href="#about">Explore the idea</a>
-      <a class="button button--secondary" href="#event">Event details</a>
-      <a class="button" href="https://tally.so/r/VL6a7N" target="_blank" rel="noopener noreferrer">Apply</a>
+  <div class="container hero__inner">
+    <div class="hero__content">
+      <p class="eyebrow">Benchmark &amp; Hackathon</p>
+      <h1 id="hero-title">Neural<br>Earth Fields</h1>
+      <p class="hero__subtitle">Learning continuous representations of our planet.</p>
+      <p class="hero__details">7–8 December 2026 · University of Bonn</p>
+      <div class="button-group">
+        <a class="button" href="https://tally.so/r/VL6a7N" target="_blank" rel="noopener noreferrer">Apply →</a>
+        <a class="button button--secondary" href="#challenge">Learn more →</a>
+      </div>
+    </div>
+    <div class="hero__globes" aria-hidden="true">
+      <img src="{{ '/assets/images/globe-natural.png' | relative_url }}" alt="" class="hero__globe" loading="eager">
+      <img src="{{ '/assets/images/globe-data.png' | relative_url }}" alt="" class="hero__globe" loading="eager">
+      <img src="{{ '/assets/images/globe-neural.png' | relative_url }}" alt="" class="hero__globe" loading="eager">
     </div>
   </div>
 </section>
+
+<div class="transform-strip" aria-hidden="true">
+  <div class="container">
+    <ol class="transform-steps">
+      <li class="transform-step">
+        <img src="{{ '/assets/images/globe-natural.png' | relative_url }}" alt="">
+        <div><strong>Observation</strong><span>Real-world sensing</span></div>
+      </li>
+      <li class="transform-arrow">→</li>
+      <li class="transform-step">
+        <img src="{{ '/assets/images/globe-data.png' | relative_url }}" alt="">
+        <div><strong>Data</strong><span>Structured geospatial features</span></div>
+      </li>
+      <li class="transform-arrow">→</li>
+      <li class="transform-step">
+        <img src="{{ '/assets/images/globe-neural.png' | relative_url }}" alt="">
+        <div><strong>Neural Field</strong><span>Continuous spatial function</span></div>
+      </li>
+    </ol>
+  </div>
+</div>
 
 <aside class="supporter-ribbon" aria-label="Event supporters">
   <div class="container supporter-ribbon__inner">
