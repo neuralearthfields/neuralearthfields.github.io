@@ -114,7 +114,7 @@ title:
 </section>
 
 <section class="content-section" id="event" aria-labelledby="event-title">
-  <div class="container content-grid">
+  <div class="container event-layout">
     <div>
       <p class="eyebrow">Event</p>
       <h2 id="event-title">24 hours in Bonn</h2>
@@ -139,6 +139,23 @@ title:
         </div>
       </dl>
     </div>
+  </div>
+</section>
+
+<section class="venue-section" id="venue" aria-labelledby="venue-title">
+  <div class="container venue-layout">
+    <div class="venue-copy">
+      <img class="venue-logo" src="{{ '/assets/images/supporters_white/impulse-white.svg' | relative_url }}" alt="IMPULSE – House for Intellectual Innovation and Creativity">
+      <p class="eyebrow">Event location</p>
+      <h2 id="venue-title">A house built for exchanging ideas</h2>
+      <p>IMPULSE is the University of Bonn’s House for Intellectual Innovation and Creativity—a place for inspiration, intellectual encounter, and creative collaboration.</p>
+      <p>Its mission is grounded in the idea that academic work thrives through receiving and sharing impulses. As a dedicated hub for inter- and transdisciplinary innovation, it is a natural home for teams bringing geospatial science and AI together.</p>
+      <p class="venue-address">Adenauerallee 131 · 53113 Bonn</p>
+      <a class="text-link" href="https://www.impulse.uni-bonn.de/de" target="_blank" rel="noopener noreferrer">Learn more about IMPULSE ↗</a>
+    </div>
+    <figure class="venue-art" aria-hidden="true">
+      <img src="{{ '/assets/images/impulse-house-watercolor.webp' | relative_url }}" alt="" loading="lazy" width="899" height="1350">
+    </figure>
   </div>
 </section>
 
@@ -175,19 +192,34 @@ title:
   </div>
 </section>
 
-<section class="content-section" id="faq" aria-labelledby="faq-title">
-  <div class="container">
-    <p class="eyebrow">What comes next</p>
-    <h2 id="faq-title">An open benchmark ecosystem</h2>
-    <p class="section-intro">The NEF Starter Kit will bring together curated datasets, baseline models, notebooks, evaluation scripts, documentation, and a public leaderboard. Selected models and reproducible submissions will remain openly available after the event.</p>
-  </div>
-</section>
-
 <section class="content-section" id="contact" aria-labelledby="contact-title">
   <div class="container">
     <p class="eyebrow">Applications</p>
     <h2 id="contact-title">Interested in Neural Earth Fields?</h2>
-    <p class="section-intro">Application details and the full open call will be published here soon.</p>
+    <p class="section-intro">We are looking for early-career researchers — Master's students and PhD candidates at any stage — with strong expertise in <strong>either</strong> geospatial science or machine learning/AI. Teams are intentionally matched across both domains, so you do not need to cover both.</p>
+
+    <div class="apply-grid">
+      <div class="apply-col">
+        <h3 class="apply-heading">Good candidates bring</h3>
+        <ul class="apply-list">
+          <li>Domain knowledge in geodesy, geography, Earth observation, geoinformatics, or a related field; <strong>or</strong> experience in ML, deep learning, computer vision, or applied mathematics</li>
+          <li>Genuine curiosity about neural representations of geospatial data</li>
+          <li>Readiness to work through an intensive overnight coding sprint with your team</li>
+        </ul>
+      </div>
+      <div class="apply-col">
+        <h3 class="apply-heading">What we cover</h3>
+        <ul class="apply-list">
+          <li>Travel costs within Europe (train preferred)</li>
+          <li>All food and drinks throughout the event (day and night)</li>
+          <li>Basic overnight accommodation within the venue — bring a sleeping bag</li>
+          <li>Networking opportunities with fellow participants, mentors, and organizers</li>
+        </ul>
+      </div>
+    </div>
+
+    <a class="button" href="https://tally.so/r/VL6a7N" target="_blank" rel="noopener noreferrer" style="margin-top:2rem;display:inline-flex;">Apply now →</a>
+
     <ol class="timeline">
       <li class="timeline-item">
         <span class="timeline-date">16 October 2026</span>
