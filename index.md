@@ -188,6 +188,24 @@ title:
     <p class="eyebrow">Applications</p>
     <h2 id="contact-title">Interested in Neural Earth Fields?</h2>
     <p class="section-intro">Application details and the full open call will be published here soon.</p>
+    <ol class="timeline">
+      <li class="timeline-item">
+        <span class="timeline-date">16 October 2026</span>
+        <strong class="timeline-label">Application Deadline</strong>
+      </li>
+      <li class="timeline-item">
+        <span class="timeline-date">30 October 2026</span>
+        <strong class="timeline-label">Acceptance Notification</strong>
+      </li>
+      <li class="timeline-item">
+        <span class="timeline-date">Early November 2026</span>
+        <strong class="timeline-label">On-boarding Meeting <span class="timeline-note">Online</span></strong>
+      </li>
+      <li class="timeline-item timeline-item--highlight">
+        <span class="timeline-date">7–8 December 2026</span>
+        <strong class="timeline-label">Event — University of Bonn</strong>
+      </li>
+    </ol>
   </div>
 </section>
 

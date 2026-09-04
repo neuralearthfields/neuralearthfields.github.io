@@ -427,6 +427,69 @@ p { margin: 0; }
   color: var(--text);
 }
 
+/* ── Timeline ─────────────────────────────────────────────────────────── */
+
+.timeline {
+  list-style: none;
+  margin: 2rem 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  max-width: 36rem;
+  border-left: 2px solid var(--border);
+  padding-left: 1.75rem;
+}
+
+.timeline-item {
+  position: relative;
+  padding: 0.25rem 0 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -2.15rem;
+  top: 0.45rem;
+  width: 0.6rem;
+  height: 0.6rem;
+  border-radius: 50%;
+  background: var(--border);
+  border: 2px solid var(--surface);
+  box-shadow: 0 0 0 1px var(--accent);
+}
+
+.timeline-item--highlight::before {
+  background: var(--accent-cta);
+  box-shadow: 0 0 0 1px var(--accent-cta);
+}
+
+.timeline-date {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  letter-spacing: 0.03em;
+}
+
+.timeline-label {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.timeline-item--highlight .timeline-label {
+  color: var(--accent-cta);
+}
+
+.timeline-note {
+  font-size: 0.78rem;
+  font-weight: 400;
+  color: var(--text-muted);
+  margin-left: 0.4rem;
+}
+
 /* ── Organizers ───────────────────────────────────────────────────────── */
 
 .organizer-grid {
