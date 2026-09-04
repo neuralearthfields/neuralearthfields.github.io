@@ -28,22 +28,9 @@ title:
   </div>
 </section>
 
-<div class="transform-strip">
-  <div class="container">
-    <ol class="transform-steps">
-      <li class="transform-step"><strong>Observation</strong><span>Real-world sensing</span></li>
-      <li class="transform-arrow">→</li>
-      <li class="transform-step"><strong>Data</strong><span>Structured geospatial features</span></li>
-      <li class="transform-arrow">→</li>
-      <li class="transform-step"><strong>Embedding</strong><span>Learned representations</span></li>
-      <li class="transform-arrow">→</li>
-      <li class="transform-step"><strong>Neural Field</strong><span>Continuous spatial function</span></li>
-    </ol>
-  </div>
-</div>
-
 <aside class="supporter-ribbon" aria-label="Event supporters">
   <div class="container supporter-ribbon__inner">
+    <a href="#supporters" aria-label="See all event supporters"><img src="{{ '/assets/images/supporters/impulse.svg' | relative_url }}" alt="IMPULSE House"></a>
     <a href="#supporters" aria-label="See all event supporters"><img src="{{ '/assets/images/supporters/tra-modelling.webp' | relative_url }}" alt="TRA Modelling"></a>
     <a href="#supporters" aria-label="See all event supporters"><img src="{{ '/assets/images/supporters/university-bonn.webp' | relative_url }}" alt="University of Bonn"></a>
     <a href="#supporters" aria-label="See all event supporters"><img src="{{ '/assets/images/supporters/meo-lab.png' | relative_url }}" alt="MEO Lab"></a>
@@ -166,7 +153,7 @@ title:
         <p>Introductory modules, benchmark briefing, team formation, and technical setup.</p>
       </article>
       <article class="info-card">
-        <p class="card-kicker">Day 1 · 16:00–Day 2 · 08:00</p>
+        <p class="card-kicker">Over night 16:00 - 08:00</p>
         <h3>Hackathon sprint</h3>
         <p>Overnight model development with mentoring and live leaderboard submissions.</p>
       </article>
@@ -210,6 +197,10 @@ title:
     <h2 id="supporters-title">Partners supporting Neural Earth Fields</h2>
     <p class="section-intro">The benchmark and hackathon are made possible by partners across the University of Bonn and the international geospatial research community.</p>
     <div class="supporter-grid">
+      <a class="supporter-card" href="https://www.impulse.uni-bonn.de/de" target="_blank" rel="noopener noreferrer">
+        <img src="{{ '/assets/images/supporters/impulse.svg' | relative_url }}" alt="IMPULSE – House for Intellectual Innovation and Creativity" loading="lazy">
+        <span>IMPULSE House <span aria-hidden="true">↗</span></span>
+      </a>
       <a class="supporter-card" href="https://www.transdisciplinary-research-area.uni-bonn.de/en/research-area-1" target="_blank" rel="noopener noreferrer">
         <img src="{{ '/assets/images/supporters/tra-modelling.webp' | relative_url }}" alt="TRA Modelling" loading="lazy">
         <span>TRA Modelling <span aria-hidden="true">↗</span></span>
