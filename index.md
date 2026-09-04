@@ -191,6 +191,45 @@ title:
   </div>
 </section>
 
+<section class="content-section" id="team" aria-labelledby="team-title">
+  <div class="container">
+    <p class="eyebrow">Team</p>
+    <h2 id="team-title">Organizers</h2>
+    <div class="organizer-grid">
+      <div class="organizer-card">
+        <img src="{{ '/assets/images/organizers/marc_russwurm.jpg' | relative_url }}" alt="Marc Rußwurm" class="organizer-img" loading="lazy">
+        <strong class="organizer-name">Marc Rußwurm</strong>
+        <span class="organizer-affil">University of Bonn</span>
+      </div>
+      <div class="organizer-card">
+        <img src="{{ '/assets/images/organizers/Juergen_Gall.jpeg' | relative_url }}" alt="Jürgen Gall" class="organizer-img" loading="lazy">
+        <strong class="organizer-name">Jürgen Gall</strong>
+        <span class="organizer-affil">University of Bonn</span>
+      </div>
+      <div class="organizer-card">
+        <img src="{{ '/assets/images/organizers/Juergen_Kusche.webp' | relative_url }}" alt="Jürgen Kusche" class="organizer-img" loading="lazy">
+        <strong class="organizer-name">Jürgen Kusche</strong>
+        <span class="organizer-affil">University of Bonn</span>
+      </div>
+      <div class="organizer-card">
+        <img src="{{ '/assets/images/organizers/konstantin_klemmer.webp' | relative_url }}" alt="Konstantin Klemmer" class="organizer-img" loading="lazy">
+        <strong class="organizer-name">Konstantin Klemmer</strong>
+        <span class="organizer-affil">UCL</span>
+      </div>
+      <div class="organizer-card">
+        <img src="{{ '/assets/images/organizers/alistair_francis.jpg' | relative_url }}" alt="Alistair Francis" class="organizer-img" loading="lazy">
+        <strong class="organizer-name">Alistair Francis</strong>
+        <span class="organizer-affil">Asterisk Labs</span>
+      </div>
+      <div class="organizer-card">
+        <img src="{{ '/assets/images/organizers/isaac_cowley.webp' | relative_url }}" alt="Isaac Cowley" class="organizer-img" loading="lazy">
+        <strong class="organizer-name">Isaac Cowley</strong>
+        <span class="organizer-affil">Taylor Geospatial Institute</span>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="supporters-section" id="supporters" aria-labelledby="supporters-title">
   <div class="container">
     <p class="eyebrow">Supported by</p>

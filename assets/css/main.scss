@@ -427,6 +427,44 @@ p { margin: 0; }
   color: var(--text);
 }
 
+/* ── Organizers ───────────────────────────────────────────────────────── */
+
+.organizer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(9rem, 1fr));
+  gap: 2.5rem 2rem;
+  margin-top: 2.5rem;
+}
+
+.organizer-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.55rem;
+}
+
+.organizer-img {
+  width: 7.5rem;
+  height: 7.5rem;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center top;
+  border: 2px solid var(--border);
+}
+
+.organizer-name {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text);
+  line-height: 1.25;
+}
+
+.organizer-affil {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+}
+
 /* ── Supporters section ───────────────────────────────────────────────── */
 
 .supporters-section {
