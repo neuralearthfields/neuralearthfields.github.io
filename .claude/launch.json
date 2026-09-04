@@ -4,7 +4,7 @@
     {
       "name": "jekyll",
       "runtimeExecutable": "bash",
-      "runtimeArgs": ["-lc", "LC_ALL=en_US.UTF-8 bundle exec jekyll serve --livereload --port 4000"],
+      "runtimeArgs": ["-lc", "source /opt/homebrew/opt/chruby/share/chruby/chruby.sh; chruby ruby-3.1.2; LC_ALL=en_US.UTF-8 bundle exec jekyll serve --livereload --port 4000"],
       "port": 4000,
       "url": "http://localhost:4000"
     }
