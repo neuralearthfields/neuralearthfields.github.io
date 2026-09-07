@@ -15,7 +15,8 @@ title:
       <p class="hero__details">7–8 December 2026 · University of Bonn</p>
       <p class="hero__details">24-hour overnight sprint · 5 teams · English</p>
       <div class="button-group">
-        <a class="button" href="https://tally.so/r/VL6a7N" target="_blank" rel="noopener noreferrer">Apply now →</a>
+        <a class="button" href="https://tally.so/r/VL6a7N" target="_blank" rel="noopener noreferrer"
+           onclick="if(typeof gtag==='function'){gtag('event','apply_click',{link_url:'https://tally.so/r/VL6a7N',link_text:'Apply now →',location:'hero'});}">Apply now →</a>
         <a class="button button--secondary" href="#challenge">Learn more →</a>
       </div>
     </div>
@@ -221,7 +222,8 @@ title:
 
     <p class="apply-note">Top teams receive a certificate and a commemorative trophy. All reproducible submissions remain on the public benchmark leaderboard after the event.</p>
 
-    <a class="button" href="https://tally.so/r/VL6a7N" target="_blank" rel="noopener noreferrer" style="margin-top:1.5rem;display:inline-flex;">Apply now →</a>
+    <a class="button" href="https://tally.so/r/VL6a7N" target="_blank" rel="noopener noreferrer" style="margin-top:1.5rem;display:inline-flex;"
+       onclick="if(typeof gtag==='function'){gtag('event','apply_click',{link_url:'https://tally.so/r/VL6a7N',link_text:'Apply now →',location:'apply_section'});}">Apply now →</a>
 
     <ol class="timeline">
       <li class="timeline-item">
