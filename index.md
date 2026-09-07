@@ -107,8 +107,8 @@ title:
 
     <aside class="question-box" aria-labelledby="research-question-title">
       <p class="eyebrow">Central research question</p>
-      <h3 id="research-question-title">Which neural-network architecture and training algorithm can most effectively store large amounts of geospatial information in a single model?</h3>
-      <p>Submissions will be compared through a public leaderboard that balances reconstruction performance and model size.</p>
+      <h3 id="research-question-title">Can we fit the Earth into a neural network?</h3>
+      <p>Build and benchmark neural representations that store geospatial information directly in their parameters.</p>
     </aside>
   </div>
 </section>
