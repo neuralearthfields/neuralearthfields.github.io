@@ -15,7 +15,7 @@ title:
       <p class="hero__details">7–8 December 2026 · University of Bonn</p>
       <p class="hero__details">24-hour overnight sprint · 5 teams · English</p>
       <div class="button-group">
-        <span class="button button--disabled" aria-disabled="true">Applications opening soon</span>
+        <a class="button" href="https://tally.so/r/VL6a7N" target="_blank" rel="noopener noreferrer">Apply now →</a>
         <a class="button button--secondary" href="#challenge">Learn more →</a>
       </div>
     </div>
@@ -221,7 +221,7 @@ title:
 
     <p class="apply-note">Top teams receive a certificate and a commemorative trophy. All reproducible submissions remain on the public benchmark leaderboard after the event.</p>
 
-    <span class="button button--disabled" aria-disabled="true" style="margin-top:1.5rem;display:inline-flex;">Applications opening soon</span>
+    <a class="button" href="https://tally.so/r/VL6a7N" target="_blank" rel="noopener noreferrer" style="margin-top:1.5rem;display:inline-flex;">Apply now →</a>
 
     <ol class="timeline">
       <li class="timeline-item">
