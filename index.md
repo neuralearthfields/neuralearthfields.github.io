@@ -53,6 +53,13 @@ title:
       <p>Neural Earth Fields explores a different paradigm: encoding geospatial information in neural-network parameters and querying it continuously from geographic coordinates.</p>
     </div>
   </div>
+  <div class="container" style="margin-top:2.5rem;">
+    <aside class="question-box" aria-labelledby="research-question-title">
+      <p class="eyebrow">Central research question</p>
+      <h3 id="research-question-title">Can we fit the Earth into a neural network?</h3>
+      <p>Build and benchmark neural representations that store geospatial information directly in their parameters.</p>
+    </aside>
+  </div>
 </section>
 
 <section class="content-section" id="challenge" aria-labelledby="challenge-title">
@@ -105,11 +112,6 @@ title:
       </article>
     </div>
 
-    <aside class="question-box" aria-labelledby="research-question-title">
-      <p class="eyebrow">Central research question</p>
-      <h3 id="research-question-title">Can we fit the Earth into a neural network?</h3>
-      <p>Build and benchmark neural representations that store geospatial information directly in their parameters.</p>
-    </aside>
   </div>
 </section>
 
