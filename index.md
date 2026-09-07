@@ -21,7 +21,7 @@ title:
       <p class="hero__subtitle">Learning continuous representations of our planet.</p>
       <p class="hero__details">7–8 December 2026 · University of Bonn</p>
       <div class="button-group">
-        <a class="button" href="https://tally.so/r/VL6a7N" target="_blank" rel="noopener noreferrer">Apply →</a>
+        <span class="button button--disabled" aria-disabled="true">Applications opening soon</span>
         <a class="button button--secondary" href="#challenge">Learn more →</a>
       </div>
     </div>
@@ -218,7 +218,7 @@ title:
       </div>
     </div>
 
-    <a class="button" href="https://tally.so/r/VL6a7N" target="_blank" rel="noopener noreferrer" style="margin-top:2rem;display:inline-flex;">Apply now →</a>
+    <span class="button button--disabled" aria-disabled="true" style="margin-top:2rem;display:inline-flex;">Applications opening soon</span>
 
     <ol class="timeline">
       <li class="timeline-item">
