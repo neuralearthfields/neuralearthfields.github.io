@@ -277,8 +277,8 @@ title:
         <span class="organizer-affil">Asterisk Labs</span>
       </div>
       <div class="organizer-card">
-        <img src="{{ '/assets/images/organizers/isaac_cowley.webp' | relative_url }}" alt="Isaac Cowley" class="organizer-img" loading="lazy">
-        <strong class="organizer-name">Isaac Cowley</strong>
+        <img src="{{ '/assets/images/organizers/isaac_corley.jpg' | relative_url }}" alt="Isaac Corley" class="organizer-img" loading="lazy">
+        <strong class="organizer-name">Isaac Corley</strong>
         <span class="organizer-affil">Taylor Geospatial Institute</span>
       </div>
     </div>
