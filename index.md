@@ -3,13 +3,6 @@ layout: default
 title:
 ---
 
-<aside class="construction-notice" role="note" aria-label="Website status">
-  <div class="container">
-    <strong>Website under construction.</strong>
-    Content is preliminary and may change until the event is publicly announced.
-  </div>
-</aside>
-
 <section class="hero" aria-labelledby="hero-title">
   <div class="container hero__inner">
     <div class="hero__content">
