@@ -13,6 +13,7 @@ title:
       </div>
       <p class="hero__subtitle">Learning continuous representations of our planet.</p>
       <p class="hero__details">7–8 December 2026 · University of Bonn</p>
+      <p class="hero__details">24-hour overnight sprint · 5 teams · English</p>
       <div class="button-group">
         <span class="button button--disabled" aria-disabled="true">Applications opening soon</span>
         <a class="button button--secondary" href="#challenge">Learn more →</a>
@@ -59,7 +60,7 @@ title:
   <div class="container">
     <p class="eyebrow">The idea</p>
     <h2 id="challenge-title">Earth data as a continuous, queryable function</h2>
-    <p class="section-intro">Interdisciplinary teams will build compact neural models that take longitude and latitude as input and reconstruct multiple global geospatial layers. The hackathon launches an open benchmark ecosystem for comparing architectures, coordinate encodings, training strategies, and parameter budgets.</p>
+    <p class="section-intro">Interdisciplinary teams will build compact neural models that take longitude and latitude as input and reconstruct multiple global geospatial layers. You bring the architecture; we provide the data, an evaluation harness, and a starter kit to get you running from day one. Benchmark results and reproducible submissions remain publicly available after the event, contributing to an open ecosystem for the community.</p>
 
     <div class="card-grid card-grid--three">
       <article class="info-card">
@@ -130,7 +131,11 @@ title:
         </div>
         <div>
           <dt>Participants</dt>
-          <dd>10 participants · 5 interdisciplinary teams</dd>
+          <dd>A deliberately small cohort: 10 participants in 5 two-person teams, matched by the organizers across Geo and AI expertise</dd>
+        </div>
+        <div>
+          <dt>Language</dt>
+          <dd>English</dd>
         </div>
       </dl>
     </div>
@@ -165,9 +170,9 @@ title:
         <p>Introductory modules, benchmark briefing, team formation, and technical setup.</p>
       </article>
       <article class="info-card">
-        <p class="card-kicker">Over night 16:00 - 08:00</p>
+        <p class="card-kicker">Overnight · 16:00–08:00</p>
         <h3>Hackathon sprint</h3>
-        <p>Overnight model development with mentoring and live leaderboard submissions.</p>
+        <p>Code through the night with mentors on hand and the leaderboard live. Basic sleeping arrangements provided — bring a sleeping bag.</p>
       </article>
       <article class="info-card">
         <p class="card-kicker">Day 2 · 09:00–12:00</p>
@@ -182,8 +187,8 @@ title:
   <div class="container">
     <p class="eyebrow">Who should apply?</p>
     <h2 id="organizers-title">Build a Geo + AI team</h2>
-    <p class="section-intro">The open call is aimed primarily at MSc students, early PhD researchers, and applicants with equivalent technical experience from across Europe. We welcome participants in geodesy, geography, geoinformation, Earth observation, machine learning, computer science, mathematics, physics, and related fields.</p>
-    <p class="section-intro">Participants will be matched into two-person teams combining complementary geospatial-domain and AI expertise. Selection will aim for disciplinary, international, and gender diversity.</p>
+    <p class="section-intro">We are looking for Master's students and PhD candidates with a background in either geospatial science or machine learning/AI — you don't need both. The organizers match participants into two-person teams across complementary expertise. Selection aims for disciplinary, international, and gender diversity.</p>
+    <a class="button button--secondary" href="#contact" style="margin-top:0.5rem;display:inline-flex;">See full criteria and timeline →</a>
   </div>
 </section>
 
@@ -200,6 +205,7 @@ title:
           <li>Domain knowledge in geodesy, geography, Earth observation, geoinformatics, or a related field; <strong>or</strong> experience in ML, deep learning, computer vision, or applied mathematics</li>
           <li>Genuine curiosity about neural representations of geospatial data</li>
           <li>Readiness to work through an intensive overnight coding sprint with your team</li>
+          <li>Their own laptop — software tools and a starter kit will be provided</li>
         </ul>
       </div>
       <div class="apply-col">
@@ -213,7 +219,9 @@ title:
       </div>
     </div>
 
-    <span class="button button--disabled" aria-disabled="true" style="margin-top:2rem;display:inline-flex;">Applications opening soon</span>
+    <p class="apply-note">Top teams receive a certificate and a commemorative trophy. All reproducible submissions remain on the public benchmark leaderboard after the event.</p>
+
+    <span class="button button--disabled" aria-disabled="true" style="margin-top:1.5rem;display:inline-flex;">Applications opening soon</span>
 
     <ol class="timeline">
       <li class="timeline-item">

@@ -575,6 +575,16 @@ p { margin: 0; }
   color: var(--accent);
 }
 
+.apply-note {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  max-width: 44rem;
+  line-height: 1.6;
+  margin-top: 2rem;
+  padding-left: 1rem;
+  border-left: 2px solid var(--border);
+}
+
 @media (max-width: 56rem) {
   .apply-grid { grid-template-columns: 1fr; }
 }
