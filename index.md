@@ -207,7 +207,7 @@ title:
         <ul class="apply-list">
           <li>Travel costs within Europe (train preferred)</li>
           <li>All food and drinks throughout the event (day and night)</li>
-          <li>Basic overnight accommodation within the venue — bring a sleeping bag</li>
+          <li>Very basic rest and sleeping arrangements at IMPULSE House — the sprint runs through the night; bring a sleeping bag and prepare for little sleep</li>
           <li>Networking opportunities with fellow participants, mentors, and organizers</li>
         </ul>
       </div>
