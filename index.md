@@ -29,7 +29,7 @@ title:
     <a href="#supporters" aria-label="See all event supporters"><img src="{{ '/assets/images/supporters/tra-modelling.webp' | relative_url }}" alt="TRA Modelling"></a>
     <a href="#supporters" aria-label="See all event supporters"><img src="{{ '/assets/images/supporters/university-bonn.webp' | relative_url }}" alt="University of Bonn"></a>
     <a href="#supporters" aria-label="See all event supporters"><img src="{{ '/assets/images/supporters/meo-lab.png' | relative_url }}" alt="MEO Lab"></a>
-    <a href="#supporters" aria-label="See all event supporters"><img src="{{ '/assets/images/supporters/taylor-geospatial.svg' | relative_url }}" alt="Taylor Geospatial Institute"></a>
+    <a href="#supporters" aria-label="See all event supporters"><img src="{{ '/assets/images/supporters/taylor-geospatial.svg' | relative_url }}" alt="Taylor Geospatial"></a>
     <a href="#supporters" aria-label="See all event supporters"><img src="{{ '/assets/images/supporters/asterisk-labs.png' | relative_url }}" alt="Asterisk Labs"></a>
     {% comment %}Temporarily hidden pending formal ISPRS approval.
     <a href="#supporters" aria-label="See all event supporters"><img src="{{ '/assets/images/supporters/isprs.jpg' | relative_url }}" alt="ISPRS"></a>
@@ -279,7 +279,7 @@ title:
       <div class="organizer-card">
         <img src="{{ '/assets/images/organizers/isaac_corley.jpg' | relative_url }}" alt="Isaac Corley" class="organizer-img" loading="lazy">
         <strong class="organizer-name">Isaac Corley</strong>
-        <span class="organizer-affil">Taylor Geospatial Institute</span>
+        <span class="organizer-affil">Taylor Geospatial</span>
       </div>
     </div>
   </div>
@@ -308,8 +308,8 @@ title:
         <span>MEO Lab <span aria-hidden="true">↗</span></span>
       </a>
       <a class="supporter-card" href="https://taylorgeospatial.org/" target="_blank" rel="noopener noreferrer">
-        <img src="{{ '/assets/images/supporters/taylor-geospatial.svg' | relative_url }}" alt="Taylor Geospatial Institute" loading="lazy">
-        <span>Taylor Geospatial Institute <span aria-hidden="true">↗</span></span>
+        <img src="{{ '/assets/images/supporters/taylor-geospatial.svg' | relative_url }}" alt="Taylor Geospatial" loading="lazy">
+        <span>Taylor Geospatial <span aria-hidden="true">↗</span></span>
       </a>
       <a class="supporter-card" href="https://asterisk.coop/" target="_blank" rel="noopener noreferrer">
         <img src="{{ '/assets/images/supporters/asterisk-labs.png' | relative_url }}" alt="Asterisk Labs" loading="lazy">
