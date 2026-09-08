@@ -281,6 +281,11 @@ title:
         <strong class="organizer-name">Isaac Corley</strong>
         <span class="organizer-affil">Taylor Geospatial</span>
       </div>
+      <div class="organizer-card">
+        <img src="{{ '/assets/images/organizers/kyle_gao.jpeg' | relative_url }}" alt="Kyle Gao" class="organizer-img" loading="lazy">
+        <strong class="organizer-name">Kyle Gao</strong>
+        <span class="organizer-affil">Aalto University</span>
+      </div>
     </div>
   </div>
 </section>
