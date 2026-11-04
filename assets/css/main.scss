@@ -696,6 +696,49 @@ p { margin: 0; }
   color: var(--text-muted);
 }
 
+/* ── Participants ────────────────────────────────────────────────────── */
+
+.participant-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 3rem 2rem;
+  margin-top: 2.5rem;
+}
+
+.participant-card { min-width: 0; }
+
+.participant-img { object-position: center; }
+
+.participant-name {
+  margin: 0.35rem 0 0;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+.participant-bio {
+  max-width: 22rem;
+  font-size: 0.875rem;
+  line-height: 1.6;
+}
+
+.participant-research {
+  max-width: 22rem;
+  margin-top: 0.3rem;
+  font-size: 0.875rem;
+  line-height: 1.6;
+  color: var(--accent);
+}
+
+.participant-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--surface);
+  color: var(--accent-cyan);
+  font-size: 1.75rem;
+  font-weight: 600;
+}
+
 /* ── Supporters section ───────────────────────────────────────────────── */
 
 .supporters-section {
@@ -780,6 +823,10 @@ p { margin: 0; }
     grid-template-columns: 1fr 1fr;
   }
 
+  .participant-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .supporter-grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -797,6 +844,11 @@ p { margin: 0; }
 
   .card-grid--three {
     grid-template-columns: 1fr;
+  }
+
+  .participant-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
   }
 
   .supporter-grid {
