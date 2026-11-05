@@ -1,0 +1,60 @@
+# Names, biographies, and research interests from applicants_bio.docx.
+- name: "Ana Gabriela Mantilla Dulcey"
+  bio: "Research Scientist at Universidad Industrial de Santander, with an MSc in Geophysics"
+  research: "Physics-Guided Machine Learning and Multiphysics Geophysical Inversion"
+  image: "/assets/images/participants/ana-dulcey.jpg"
+
+- name: "Moa Sjöberg"
+  bio: "PhD researcher in Meteorology at Uppsala University"
+  research: "Satellite-Based Sea Ice Analysis and Machine Learning"
+  image: "/assets/images/participants/moa-sjoberg.jpg"
+
+- name: "Abhishek Singh"
+  bio: "MSc graduate in Data Science, University of Europe for Applied Sciences"
+  research: "Vision Foundation Models for Earth Observation, Weak Supervision, and Cross-Dataset Evaluation"
+  image: "/assets/images/participants/abhishek-singh.jpg"
+
+- name: "Dheeraj Parkash"
+  bio: "Machine learning researcher with research experience at INRIA/CNRS"
+  research: "Multimodal Learning and Continuous Representations for Scientific and Earth Data"
+  image: "/assets/images/participants/dheeraj-parkash.jpg"
+
+- name: "Andrea Federici"
+  bio: "PhD researcher at UiT The Arctic University of Norway"
+  research: "Adapting Earth Foundation Models for Weather Downscaling and Regional Generalization"
+  image: "/assets/images/participants/andrea-federici.jpg"
+
+- name: "Frederick Schindlegger"
+  bio: "MSc student at the University of Münster and visiting researcher at IBM Research Europe"
+  research: "Geospatial Foundation Models, Dense Representations, and Sustainable Development Applications"
+  image: "/assets/images/participants/frederick-schindlegger.jpg"
+
+- name: "Sacha Lewin"
+  bio: "PhD researcher at the University of Liège"
+  research: "Continuous Generative Models for Spatiotemporal Data and Global Weather Modeling"
+  image: "/assets/images/participants/sacha-lewin.jpg"
+
+- name: "Daniel Rodrigues Perazzo"
+  bio: "ELLIS PhD researcher at the Italian Institute of Technology, affiliated with the University of Genoa"
+  research: "Implicit Neural Representations, Neural Fields, and Geometric Modeling"
+  image: "/assets/images/participants/daniel-rodrigues-perazzo.jpg"
+
+- name: "Ananda Krishnan"
+  bio: "Researcher at the Christian Doppler Laboratory GEOHUM, Salzburg, Austria"
+  research: "Self-Supervised Learning and Diffusion-Based Thermal Downscaling"
+  image: "/assets/images/participants/ananda-krishnan.jpg"
+
+- name: "Haoran Zhang"
+  bio: "MPhil/PhD researcher at University College London"
+  research: "Geographic Domain Shifts and Spatial Representation Learning"
+  image: "/assets/images/participants/haoran-zhang.jpg"
+
+- name: "Moritz Lucas"
+  bio: "PhD researcher at the Joint Lab for Artificial Intelligence and Data Science, University of Osnabrück"
+  research: "Deep Learning for Tree Detection and Mapping in Aerial Imagery"
+  image: "/assets/images/participants/moritz-lucas.jpg"
+
+- name: "Titus Top"
+  bio: "PhD researcher at KU Leuven"
+  research: "Graph Neural Network Emulators for Ice-Sheet Dynamics and Sea-Level Projections"
+  image: "/assets/images/participants/titus-top.jpg"
