@@ -55,6 +55,27 @@ title:
   </div>
 </section>
 
+<section class="content-section" id="participants" aria-labelledby="participants-title">
+  <div class="container">
+    <p class="eyebrow">Meet the participants</p>
+    <h2 id="participants-title">Participants</h2>
+    <div class="participant-grid">
+      {% for participant in site.data.participants %}
+      <article class="organizer-card participant-card" aria-labelledby="participant-{{ forloop.index }}">
+        {% if participant.image %}
+        <img src="{{ participant.image | relative_url }}" alt="{{ participant.name | escape }}" class="organizer-img participant-img" loading="lazy" width="120" height="120">
+        {% else %}
+        <div class="organizer-img participant-placeholder" aria-hidden="true">{{ participant.initials }}</div>
+        {% endif %}
+        <h3 class="organizer-name participant-name" id="participant-{{ forloop.index }}">{{ participant.name | escape }}</h3>
+        <p class="organizer-affil participant-bio">{{ participant.bio | escape }}</p>
+        <p class="participant-research">{{ participant.research | escape }}</p>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
 <section class="content-section" id="challenge" aria-labelledby="challenge-title">
   <div class="container">
     <p class="eyebrow">The idea</p>
@@ -284,27 +305,6 @@ title:
         <strong class="organizer-name">Kyle Gao</strong>
         <span class="organizer-affil">Aalto University</span>
       </div>
-    </div>
-  </div>
-</section>
-
-<section class="content-section" id="participants" aria-labelledby="participants-title">
-  <div class="container">
-    <p class="eyebrow">Meet the participants</p>
-    <h2 id="participants-title">Participants</h2>
-    <div class="participant-grid">
-      {% for participant in site.data.participants %}
-      <article class="organizer-card participant-card" aria-labelledby="participant-{{ forloop.index }}">
-        {% if participant.image %}
-        <img src="{{ participant.image | relative_url }}" alt="{{ participant.name | escape }}" class="organizer-img participant-img" loading="lazy" width="120" height="120">
-        {% else %}
-        <div class="organizer-img participant-placeholder" aria-hidden="true">{{ participant.initials }}</div>
-        {% endif %}
-        <h3 class="organizer-name participant-name" id="participant-{{ forloop.index }}">{{ participant.name | escape }}</h3>
-        <p class="organizer-affil participant-bio">{{ participant.bio | escape }}</p>
-        <p class="participant-research">{{ participant.research | escape }}</p>
-      </article>
-      {% endfor %}
     </div>
   </div>
 </section>

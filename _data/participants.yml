@@ -1,18 +1,13 @@
 # Names, biographies, and research interests from applicants_bio.docx.
-- name: "Ana Gabriela Mantilla Dulcey"
-  bio: "Research Scientist at Universidad Industrial de Santander, with an MSc in Geophysics"
-  research: "Physics-Guided Machine Learning and Multiphysics Geophysical Inversion"
-  image: "/assets/images/participants/ana-dulcey.jpg"
-
-- name: "Moa Sjöberg"
-  bio: "PhD researcher in Meteorology at Uppsala University"
-  research: "Satellite-Based Sea Ice Analysis and Machine Learning"
-  image: "/assets/images/participants/moa-sjoberg.jpg"
-
 - name: "Abhishek Singh"
   bio: "MSc graduate in Data Science, University of Europe for Applied Sciences"
   research: "Vision Foundation Models for Earth Observation, Weak Supervision, and Cross-Dataset Evaluation"
   image: "/assets/images/participants/abhishek-singh.jpg"
+
+- name: "Ana Gabriela Mantilla Dulcey"
+  bio: "Research Scientist at Universidad Industrial de Santander, with an MSc in Geophysics"
+  research: "Physics-Guided Machine Learning and Multiphysics Geophysical Inversion"
+  image: "/assets/images/participants/ana-dulcey.jpg"
 
 - name: "Dheeraj Parkash"
   bio: "Machine learning researcher with research experience at INRIA/CNRS"
@@ -28,6 +23,11 @@
   bio: "MSc student at the University of Münster and visiting researcher at IBM Research Europe"
   research: "Geospatial Foundation Models, Dense Representations, and Sustainable Development Applications"
   image: "/assets/images/participants/frederick-schindlegger.jpg"
+
+- name: "Moa Sjöberg"
+  bio: "PhD researcher in Meteorology at Uppsala University"
+  research: "Satellite-Based Sea Ice Analysis and Machine Learning"
+  image: "/assets/images/participants/moa-sjoberg.jpg"
 
 - name: "Sacha Lewin"
   bio: "PhD researcher at the University of Liège"
