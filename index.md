@@ -305,6 +305,11 @@ title:
         <strong class="organizer-name">Kyle Gao</strong>
         <span class="organizer-affil">Aalto University</span>
       </div>
+      <div class="organizer-card">
+        <img src="{{ '/assets/images/organizers/arjun_rao.jpg' | relative_url }}" alt="Arjun Rao" class="organizer-img" loading="lazy">
+        <strong class="organizer-name">Arjun Rao</strong>
+        <span class="organizer-affil">University of British Columbia</span>
+      </div>
     </div>
   </div>
 </section>
