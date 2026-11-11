@@ -197,8 +197,28 @@ p { margin: 0; }
 }
 
 .hero__details {
-  font-size: 0.9rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.hero__details ul {
+  display: flex;
+  gap: 0.5rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.hero__details li {
+  white-space: nowrap;
+  padding: 0.3rem 0.75rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.06);
+  font-size: 0.85rem;
   color: var(--text-muted);
+  line-height: 1.4;
 }
 
 .hero__tagline {
@@ -321,9 +341,10 @@ p { margin: 0; }
   border-top: 1px solid var(--border);
 }
 
-.content-section + .content-section:nth-child(odd) {
-  background: var(--surface);
-}
+/* Sections alternate dark / light down the page; cards flip to stay visible */
+.section--alt { background: var(--surface); }
+
+.section--alt .participant-track .participant-card { background: var(--background); }
 
 .section-intro {
   font-size: 1.05rem;
@@ -341,6 +362,9 @@ p { margin: 0; }
   gap: clamp(2rem, 5vw, 4.5rem);
   align-items: start;
 }
+
+/* Body text sits vertically centred against its heading */
+.content-grid > .prose { align-self: center; }
 
 .content-grid h2 {
   font-size: clamp(1.5rem, 3.5vw, 2.25rem);
@@ -360,39 +384,6 @@ p { margin: 0; }
 
 /* ── Cards ────────────────────────────────────────────────────────────── */
 
-.card-grid {
-  display: grid;
-  gap: 1rem;
-  margin-top: 2rem;
-}
-
-.card-grid--three {
-  grid-template-columns: repeat(3, 1fr);
-}
-
-.info-card {
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: 6px;
-  padding: 1.5rem 1.75rem;
-}
-
-.info-card h3 {
-  font-size: 1.1rem;
-  margin: 0.4rem 0 0.5rem;
-  color: var(--text);
-}
-
-.info-card p { font-size: 0.95rem; color: var(--text-muted); line-height: 1.6; }
-
-.card-number {
-  font-size: 0.7rem;
-  font-weight: 700;
-  letter-spacing: 0.12em;
-  color: var(--accent-cyan);
-  margin: 0;
-}
-
 .card-kicker {
   font-size: 0.72rem;
   font-weight: 600;
@@ -402,44 +393,89 @@ p { margin: 0; }
   margin: 0;
 }
 
-/* ── Question box ─────────────────────────────────────────────────────── */
+/* ── Slide carousels (About, Event) ──────────────────────────────────── */
 
-.question-box {
-  margin-top: 2.25rem;
-  border-left: 3px solid var(--accent-cyan);
-  background: rgba(34, 211, 238, 0.04);
-  border-radius: 0 6px 6px 0;
-  padding: 1.5rem 2rem;
+.carousel-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
 }
 
-.question-box h3 {
-  font-size: clamp(1.1rem, 2.5vw, 1.45rem);
-  margin: 0.5rem 0;
-  color: var(--text);
-  font-weight: 600;
-  line-height: 1.45;
-}
-
-.question-box p { margin-top: 0.75rem; color: var(--text-muted); font-size: 0.95rem; }
-
-/* ── Event facts ──────────────────────────────────────────────────────── */
-
-.event-layout {
-  display: grid;
-  grid-template-columns: 0.85fr 1.15fr;
-  gap: clamp(2rem, 5vw, 4.5rem);
-  align-items: center;
-}
-
-.event-layout h2 {
+.carousel-header h2 {
   font-size: clamp(1.5rem, 3.5vw, 2.25rem);
   margin: 0.5rem 0 0;
 }
 
-.event-facts {
-  margin: 0;
+.slide-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.slide-tab {
+  padding: 0.35rem 0.9rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--text-muted);
+  font: inherit;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+
+.slide-tab:hover { color: var(--text); }
+
+.slide-tab.is-active {
+  border-color: rgba(34, 211, 238, 0.55);
+  background: rgba(34, 211, 238, 0.1);
+  color: var(--accent-cyan);
+}
+
+.slide-card {
+  scroll-snap-align: start;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  padding: clamp(1.75rem, 4vw, 3rem);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+}
+
+.slide-card .content-grid h3 { margin: 0; }
+
+.slide-card .eyebrow + h3 { margin-top: 0.5rem; }
+
+/* About cards: roomier, headings at the top and the three-column rows
+   pinned to the bottom, so they line up from slide to slide */
+#about .slide-card {
+  justify-content: flex-start;
+  min-height: 32rem;
+  padding: clamp(2rem, 5vw, 3.5rem);
+}
+
+#about .slide-steps {
+  margin-top: auto;
+  padding-top: 2.5rem;
+}
+
+/* Cards without a three-column row sit centred instead */
+#about .slide-card--centered { justify-content: center; }
+
+.slide-card h3 {
+  margin: 0 0 1.5rem;
+  font-size: clamp(1.3rem, 2.6vw, 1.75rem);
+  line-height: 1.2;
+}
+
+.event-facts {
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 2.5rem;
 }
 
 .event-facts > div {
@@ -451,7 +487,7 @@ p { margin: 0; }
   font-size: 0.95rem;
 }
 
-.event-facts > div:first-child { border-top: 1px solid var(--border); }
+.event-facts > div:nth-child(-n + 2) { border-top: 1px solid var(--border); }
 
 .event-facts dt {
   color: var(--text-muted);
@@ -466,56 +502,61 @@ p { margin: 0; }
   color: var(--text);
 }
 
-/* ── Venue ───────────────────────────────────────────────────────────── */
-
-.venue-section {
-  position: relative;
-  overflow: hidden;
-  border-top: 1px solid var(--border);
-  background:
-    radial-gradient(circle at 82% 35%, rgba(34, 211, 238, 0.09), transparent 32rem),
-    var(--surface);
-}
-
-.venue-layout {
+.slide-steps {
+  list-style: none;
+  margin: 2.5rem 0 0;
+  padding: 0;
   display: grid;
-  grid-template-columns: minmax(0, 1.15fr) minmax(18rem, 0.85fr);
-  align-items: end;
-  gap: clamp(2rem, 6vw, 6rem);
-  min-height: 38rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.5rem;
 }
 
-.venue-copy {
-  position: relative;
-  z-index: 1;
-  max-width: 42rem;
-  padding: clamp(3.5rem, 8vw, 6.5rem) 0;
+.slide-steps li {
+  padding-top: 1rem;
+  border-top: 2px solid rgba(34, 211, 238, 0.4);
+}
+
+.slide-steps h4 {
+  margin: 0.4rem 0 0.5rem;
+  font-size: 1.05rem;
+  color: var(--text);
+}
+
+.slide-steps p:not(.card-kicker) {
+  margin: 0;
+  font-size: 0.925rem;
+  line-height: 1.6;
+  color: var(--text-muted);
+}
+
+/* ── Venue slide ─────────────────────────────────────────────────────── */
+
+.venue-slide {
+  display: grid;
+  grid-template-columns: minmax(0, 1.4fr) minmax(0, 0.6fr);
+  align-items: center;
+  gap: clamp(1.5rem, 4vw, 3rem);
+  background:
+    radial-gradient(circle at 82% 35%, rgba(34, 211, 238, 0.09), transparent 24rem),
+    var(--surface);
 }
 
 .venue-logo {
   display: block;
-  width: min(15rem, 62vw);
+  width: min(12rem, 50vw);
   height: auto;
-  margin-bottom: 2.5rem;
+  margin-bottom: 1.5rem;
   opacity: 0.92;
 }
 
-.venue-copy h2 {
-  max-width: 34rem;
-  margin: 0.65rem 0 1.5rem;
-  font-size: clamp(1.8rem, 4vw, 3rem);
-  line-height: 1.08;
-}
-
-.venue-copy > p:not(.eyebrow):not(.venue-address) {
-  max-width: 39rem;
+.venue-copy > p:not(.venue-address) {
   margin: 0 0 1rem;
   color: var(--text-muted);
-  line-height: 1.75;
+  line-height: 1.7;
 }
 
 .venue-address {
-  margin: 1.75rem 0 0.55rem;
+  margin: 1.25rem 0 0.5rem;
   color: var(--text);
   font-weight: 600;
 }
@@ -531,27 +572,58 @@ p { margin: 0; }
   text-decoration: underline;
 }
 
-.venue-art {
-  align-self: end;
-  margin: 2rem 0 -4rem;
-  pointer-events: none;
-}
+.venue-art { margin: 0; }
 
 .venue-art img {
   display: block;
   width: 100%;
-  height: auto;
-  filter: drop-shadow(0 1.75rem 2.5rem rgba(0, 0, 0, 0.32));
+  max-height: 24rem;
+  object-fit: contain;
+  filter: drop-shadow(0 1.25rem 2rem rgba(0, 0, 0, 0.32));
 }
 
-/* ── Apply grid ───────────────────────────────────────────────────────── */
+/* ── Apply ────────────────────────────────────────────────────────────── */
 
-.apply-grid {
+.apply-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.apply-header h2 {
+  font-size: clamp(1.5rem, 3.5vw, 2.25rem);
+  margin: 0.5rem 0 0;
+}
+
+.apply-columns {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2.5rem;
-  margin-top: 2rem;
+  grid-template-columns: minmax(0, 2fr) minmax(16rem, 1fr);
+  gap: clamp(2rem, 5vw, 4.5rem);
+  align-items: start;
+  margin-top: clamp(2rem, 4vw, 3rem);
 }
+
+
+.apply-lead {
+  margin: 0 0 0.75rem;
+  font-size: clamp(1.15rem, 2.2vw, 1.4rem);
+  font-weight: 600;
+  color: var(--text);
+}
+
+.apply-lead--spaced { margin-top: 2rem; }
+
+/* Timeline hugs the right edge, leaving the room to the text column */
+.apply-timeline { justify-self: end; }
+
+.apply-text {
+  margin: 0;
+  color: var(--text-muted);
+  line-height: 1.7;
+}
+
 
 .apply-heading {
   font-size: 0.8rem;
@@ -586,25 +658,16 @@ p { margin: 0; }
   color: var(--accent);
 }
 
-.apply-note {
-  font-size: 0.875rem;
-  color: var(--text-muted);
-  max-width: 44rem;
-  line-height: 1.6;
-  margin-top: 2rem;
-  padding-left: 1rem;
-  border-left: 2px solid var(--border);
-}
-
 @media (max-width: 56rem) {
-  .apply-grid { grid-template-columns: 1fr; }
+  .apply-columns { grid-template-columns: 1fr; }
+  .apply-timeline { justify-self: start; }
 }
 
 /* ── Timeline ─────────────────────────────────────────────────────────── */
 
 .timeline {
   list-style: none;
-  margin: 2rem 0 0;
+  margin: 0.5rem 0 0;
   padding: 0;
   display: flex;
   flex-direction: column;
@@ -665,12 +728,16 @@ p { margin: 0; }
 
 /* ── Organizers ───────────────────────────────────────────────────────── */
 
+/* Wrapping rows, so a shorter last row sits centred */
 .organizer-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(9rem, 1fr));
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 2.5rem 2rem;
   margin-top: 2.5rem;
 }
+
+.organizer-grid > .organizer-card { width: 9.5rem; }
 
 .organizer-card {
   display: flex;
@@ -703,12 +770,130 @@ p { margin: 0; }
 
 /* ── Participants ────────────────────────────────────────────────────── */
 
-.participant-grid {
+.participants-layout {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 3rem 2rem;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  gap: 2.5rem;
   margin-top: 2.5rem;
 }
+
+.participant-carousel {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.carousel-stage {
+  flex: 1;
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.carousel-track {
+  align-self: stretch;
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 100%;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+}
+
+.carousel-track::-webkit-scrollbar { display: none; }
+
+.carousel-track:focus-visible {
+  outline: 2px solid var(--accent-cyan);
+  outline-offset: 4px;
+}
+
+.participant-track .participant-card {
+  scroll-snap-align: start;
+  justify-content: center;
+  padding: 2rem 1.5rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+}
+
+.participant-track .participant-img {
+  width: 9rem;
+  height: 9rem;
+  border-color: rgba(34, 211, 238, 0.35);
+}
+
+.participant-track .participant-name { font-size: 1.15rem; }
+
+.participant-track .participant-research { color: var(--text); }
+
+.carousel-button {
+  width: 2.75rem;
+  height: 2.75rem;
+  border: 1px solid rgba(34, 211, 238, 0.55);
+  border-radius: 50%;
+  background: rgba(34, 211, 238, 0.1);
+  color: var(--accent-cyan);
+  font-size: 1.6rem;
+  line-height: 1;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+}
+
+.carousel-button:hover {
+  background: var(--accent-cyan);
+  color: var(--background);
+}
+
+/* Sits below the card without adding height, so card and map bottoms line up */
+.carousel-status {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  margin: 0.6rem 0 0;
+  font-size: 0.8rem;
+  line-height: 1.5;
+  color: var(--text-muted);
+  text-align: center;
+}
+
+.participants-map-wrap { margin: 0; }
+
+.participants-map {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--background);
+}
+
+.map-country { fill: var(--surface); stroke: rgba(74, 184, 248, 0.22); stroke-width: 0.6; }
+.map-country--active { fill: rgba(34, 211, 238, 0.2); stroke: rgba(34, 211, 238, 0.55); }
+.map-link { fill: none; stroke: var(--accent-cyan); stroke-width: 1.2; opacity: 0.75; transition: opacity 0.2s; }
+.map-link--offmap { stroke-dasharray: 4 4; }
+.map-hit { fill: transparent; }
+.map-dot { fill: var(--accent-cyan); transition: fill 0.2s; }
+.map-site { cursor: pointer; }
+.map-site:hover .map-dot { fill: var(--text); }
+.map-arrow { fill: var(--accent-cta); }
+.map-bonn__halo { fill: rgba(198, 255, 77, 0.18); }
+.map-bonn__dot { fill: var(--accent-cta); }
+.map-label { fill: var(--text-muted); font-size: 11px; font-weight: 600; }
+.map-label--offmap { fill: var(--accent-cyan); }
+.map-label--bonn { fill: var(--accent-cta); font-size: 13px; }
+
+.has-active .map-link { opacity: 0.3; }
+.has-active .map-link.is-active {
+  opacity: 1;
+  stroke: var(--accent-cta);
+  stroke-width: 2.2;
+  marker-end: url(#map-arrow);
+}
+.map-site.is-active .map-dot { fill: var(--accent-cta); r: 5; }
+.map-site.is-active .map-label--offmap { fill: var(--accent-cta); }
 
 .participant-card { min-width: 0; }
 
@@ -753,10 +938,16 @@ p { margin: 0; }
 }
 
 .supporter-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  --per-row: 3;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 1rem;
   margin-top: 2rem;
+}
+
+.supporter-grid > .supporter-card {
+  flex: 0 0 calc((100% - (var(--per-row) - 1) * 1rem) / var(--per-row));
 }
 
 .supporter-card {
@@ -815,26 +1006,24 @@ p { margin: 0; }
     grid-template-columns: 1fr;
   }
 
-  .event-layout {
-    grid-template-columns: 1fr;
+  .event-facts { grid-template-columns: 1fr; }
+
+  .event-facts > div:nth-child(2) { border-top: 0; }
+
+  .slide-steps { grid-template-columns: 1fr; }
+
+  .venue-slide { grid-template-columns: 1fr; }
+
+  .venue-art { display: none; }
+
+  .participants-layout { grid-template-columns: 1fr; }
+
+  .participants-map-wrap {
+    order: -1;
+    max-width: 32rem;
   }
 
-  .venue-layout {
-    grid-template-columns: minmax(0, 1.1fr) minmax(15rem, 0.9fr);
-    gap: 1.5rem;
-  }
-
-  .card-grid--three {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .participant-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .supporter-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
+  .supporter-grid { --per-row: 2; }
 }
 
 @media (max-width: 38rem) {
@@ -847,38 +1036,21 @@ p { margin: 0; }
 
   .site-navigation { gap: 1rem; }
 
-  .card-grid--three {
-    grid-template-columns: 1fr;
+  .hero__details ul { gap: 0.375rem; }
+
+  .hero__details li {
+    padding: 0.25rem 0.6rem;
+    font-size: 0.78rem;
   }
 
-  .participant-grid {
-    grid-template-columns: 1fr;
-    gap: 2.5rem;
+  .carousel-stage { gap: 0.5rem; }
+
+  .carousel-button {
+    width: 2.25rem;
+    height: 2.25rem;
+    font-size: 1.3rem;
   }
 
-  .supporter-grid {
-    grid-template-columns: 1fr 1fr;
-  }
 
   .supporter-ribbon__inner { gap: 1.5rem; }
-
-  .venue-layout {
-    grid-template-columns: 1fr;
-    min-height: 0;
-  }
-
-  .venue-copy {
-    padding-bottom: 1rem;
-  }
-
-  .venue-logo {
-    margin-bottom: 2rem;
-  }
-
-  .venue-art {
-    justify-self: center;
-    width: min(20rem, 78vw);
-    margin: 0 0 -4rem;
-  }
-
 }
