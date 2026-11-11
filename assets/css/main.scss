@@ -309,6 +309,11 @@ p { margin: 0; }
 }
 .supporter-ribbon__inner img:hover { opacity: 0.9; }
 
+.supporter-ribbon__inner img.supporter-ribbon__meo-logo {
+  filter: none;
+  mix-blend-mode: normal;
+}
+
 /* ── Content sections ─────────────────────────────────────────────────── */
 
 .content-section {

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 248.534 249.58">
+  <defs>
+    <style>
+      .cls-1{fill:#ffffff}
+      .cls-2{font-family:&apos;Exo 2&apos;;font-size:66.31;font-weight:500;fill:#000000;letter-spacing:-1.326}
+      .cls-3{font-family:&apos;Exo 2&apos;;font-size:66.31;font-weight:600;fill:#000000}
+    </style>
+  </defs>
+  <title>Meo_Lab.svg</title>
+  <g id="UNI_Bonn_Logo_Standard_RZ">
+    <g id="g3022">
+      <path id="path3024" d="M131.247 68.595 C110.647 44.343 99.059 24.445 89.793 0 L248.534 0 L248.534 137.142 C217.131 132.906 173.094 117.867 131.247 68.595" class="cls-1"/>
+    </g>
+    <path id="path3026" d="M248.512 248.49 L0 248.49 L0 178.635 L248.512 178.635 Z" class="cls-1"/>
+    <g id="g3028">
+      <path id="path3030" d="M0.021 0 L79.409 0 C88.916 25.858 103.356 52.016 125.296 77.848 C168.5 128.708 216.337 144.026 248.533 148.27 L248.533 167.567 L0.021 167.567 Z" class="cls-1"/>
+    </g>
+    <text transform="matrix(1 0 0 1 5.245 159.129)" x="0" y="0" xml:space="preserve" class="cls-2"><tspan x="0" y="0">MEO</tspan></text>
+    <text transform="matrix(1 0 0 1 8.735 236.251)" x="0" y="0" xml:space="preserve" class="cls-3"><tspan x="0" y="0">LAB</tspan></text>
+  </g>
+</svg>

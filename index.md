@@ -28,7 +28,7 @@ title:
     <a href="#supporters" aria-label="See all event supporters"><img src="{{ '/assets/images/supporters/impulse.svg' | relative_url }}" alt="IMPULSE House"></a>
     <a href="#supporters" aria-label="See all event supporters"><img src="{{ '/assets/images/supporters/tra-modelling.webp' | relative_url }}" alt="TRA Modelling"></a>
     <a href="#supporters" aria-label="See all event supporters"><img src="{{ '/assets/images/supporters/university-bonn.svg' | relative_url }}" alt="University of Bonn"></a>
-    <a href="#supporters" aria-label="See all event supporters"><img src="{{ '/assets/images/supporters/meo-lab.png' | relative_url }}" alt="MEO Lab"></a>
+    <a href="#supporters" aria-label="See all event supporters"><img class="supporter-ribbon__meo-logo" src="{{ '/assets/images/supporters/Meo_Lab_white.svg' | relative_url }}" alt="MEO Lab"></a>
     <a href="#supporters" aria-label="See all event supporters"><img src="{{ '/assets/images/supporters/taylor-geospatial.svg' | relative_url }}" alt="Taylor Geospatial"></a>
     <a href="#supporters" aria-label="See all event supporters"><img src="{{ '/assets/images/supporters/asterisk-labs.png' | relative_url }}" alt="Asterisk Labs"></a>
     <a href="#supporters" aria-label="See all event supporters"><img src="{{ '/assets/images/supporters/isprs.png' | relative_url }}" alt="ISPRS"></a>
@@ -333,7 +333,7 @@ title:
         <span>University of Bonn <span aria-hidden="true">↗</span></span>
       </a>
       <a class="supporter-card" href="https://www.ilr1.uni-bonn.de/en/research/research-groups" target="_blank" rel="noopener noreferrer">
-        <img src="{{ '/assets/images/supporters/meo-lab.png' | relative_url }}" alt="Machine Learning in Earth Observation Lab" loading="lazy">
+        <img src="{{ '/assets/images/supporters/Meo_Lab_white.svg' | relative_url }}" alt="Machine Learning in Earth Observation Lab" loading="lazy">
         <span>MEO Lab <span aria-hidden="true">↗</span></span>
       </a>
       <a class="supporter-card" href="https://taylorgeospatial.org/" target="_blank" rel="noopener noreferrer">
