@@ -49,7 +49,7 @@ p { margin: 0; }
 /* ── Layout ───────────────────────────────────────────────────────────── */
 
 .container {
-  width: min(100% - 2rem, var(--max-width));
+  width: min(100% - 3rem, var(--max-width));
   margin-inline: auto;
 }
 
@@ -1029,15 +1029,29 @@ p { margin: 0; }
   .supporter-grid { --per-row: 2; }
 }
 
-@media (max-width: 38rem) {
+/* Header: title and button on top, links centred on a row of their own */
+@media (max-width: 64rem) {
+  html { scroll-padding-top: 8rem; }
+
   .site-header__inner {
     flex-wrap: wrap;
     height: auto;
     padding: 0.75rem 0;
-    gap: 0.75rem;
+    row-gap: 0.75rem;
   }
 
-  .site-navigation { gap: 1rem; }
+  .site-navigation {
+    order: 1;
+    flex-basis: 100%;
+    justify-content: center;
+    gap: 0.5rem 1.25rem;
+  }
+}
+
+@media (max-width: 38rem) {
+  .container { width: calc(100% - 4rem); }
+
+  .site-navigation { gap: 0.4rem 1rem; }
 
   .hero__details ul { gap: 0.375rem; }
 
