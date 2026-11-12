@@ -1053,6 +1053,19 @@ p { margin: 0; }
 
   .site-navigation { gap: 0.4rem 1rem; }
 
+  /* Title wraps if it must, so the button stays on its row, right-aligned */
+  .site-title {
+    flex: 1 1 0;
+    min-width: 0;
+    white-space: normal;
+  }
+
+  .site-header__apply {
+    margin-left: auto;
+    padding: 0.4rem 0.75rem;
+    font-size: 0.78rem;
+  }
+
   .hero__details ul { gap: 0.375rem; }
 
   .hero__details li {
