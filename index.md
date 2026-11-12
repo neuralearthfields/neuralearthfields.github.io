@@ -37,7 +37,7 @@ title:
     <a href="https://www.uni-bonn.de/en" target="_blank" rel="noopener noreferrer" aria-label="University of Bonn (opens in a new tab)"><img src="{{ '/assets/images/supporters/university-bonn.svg' | relative_url }}" alt="University of Bonn"></a>
     <a href="https://meo-lab.com" target="_blank" rel="noopener noreferrer" aria-label="MEO Lab (opens in a new tab)"><img class="supporter-ribbon__meo-logo" src="{{ '/assets/images/supporters/Meo_Lab_white.svg' | relative_url }}" alt="MEO Lab"></a>
     <a href="https://taylorgeospatial.org/" target="_blank" rel="noopener noreferrer" aria-label="Taylor Geospatial (opens in a new tab)"><img src="{{ '/assets/images/supporters/taylor-geospatial.svg' | relative_url }}" alt="Taylor Geospatial"></a>
-    <a href="https://asterisk.coop/" target="_blank" rel="noopener noreferrer" aria-label="Asterisk Labs (opens in a new tab)"><img src="{{ '/assets/images/supporters/asterisk-labs.png' | relative_url }}" alt="Asterisk Labs"></a>
+    <a href="https://asterisk.coop/" target="_blank" rel="noopener noreferrer" aria-label="Asterisk Labs (opens in a new tab)"><img src="{{ '/assets/images/supporters/asterisk-labs_1.png' | relative_url }}" alt="Asterisk Labs"></a>
     <a href="https://www.isprs.org/" target="_blank" rel="noopener noreferrer" aria-label="ISPRS (opens in a new tab)"><img src="{{ '/assets/images/supporters/isprs.png' | relative_url }}" alt="ISPRS"></a>
   </div>
 </aside>
@@ -390,7 +390,7 @@ title:
         <span>Taylor Geospatial <span aria-hidden="true">↗</span></span>
       </a>
       <a class="supporter-card" href="https://asterisk.coop/" target="_blank" rel="noopener noreferrer">
-        <img src="{{ '/assets/images/supporters/asterisk-labs.png' | relative_url }}" alt="Asterisk Labs" loading="lazy">
+        <img src="{{ '/assets/images/supporters/asterisk-labs_1.png' | relative_url }}" alt="Asterisk Labs" loading="lazy">
         <span>Asterisk Labs <span aria-hidden="true">↗</span></span>
       </a>
       <a class="supporter-card" href="https://www.isprs.org/" target="_blank" rel="noopener noreferrer">
