@@ -1060,7 +1060,29 @@ p { margin: 0; }
     font-size: 0.78rem;
   }
 
-  .carousel-stage { gap: 0.5rem; }
+  /* Arrows move below the card so it gets the full width */
+  .carousel-stage {
+    grid-template-columns: 1fr 1fr;
+    gap: 0.75rem 4rem;
+  }
+
+  .carousel-track {
+    grid-column: 1 / -1;
+    grid-row: 1;
+  }
+
+  .carousel-button { grid-row: 2; }
+  .carousel-button[data-direction="-1"] { justify-self: end; }
+  .carousel-button[data-direction="1"] { justify-self: start; }
+
+  /* Participant counter sits between the arrows */
+  .carousel-status {
+    top: auto;
+    bottom: 0;
+    margin: 0;
+    line-height: 2.25rem;
+    pointer-events: none;
+  }
 
   .carousel-button {
     width: 2.25rem;
