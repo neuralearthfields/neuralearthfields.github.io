@@ -465,6 +465,9 @@ p { margin: 0; }
 /* Cards without a three-column row sit centred instead */
 #about .slide-card--centered { justify-content: center; }
 
+/* The idea: heading column centred against its longer prose */
+#idea .content-grid { align-items: center; }
+
 .slide-card h3 {
   margin: 0 0 1.5rem;
   font-size: clamp(1.3rem, 2.6vw, 1.75rem);
@@ -549,7 +552,7 @@ p { margin: 0; }
   opacity: 0.92;
 }
 
-.venue-copy > p:not(.venue-address) {
+.venue-copy > p:not(.venue-address):not(.eyebrow) {
   margin: 0 0 1rem;
   color: var(--text-muted);
   line-height: 1.7;

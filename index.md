@@ -53,13 +53,12 @@ title:
         <button type="button" class="slide-tab" data-slide="0">Mission</button>
         <button type="button" class="slide-tab" data-slide="1">Research question</button>
         <button type="button" class="slide-tab" data-slide="2">The idea</button>
-        <button type="button" class="slide-tab" data-slide="3">Benchmark</button>
       </div>
     </div>
 
     <div class="carousel-stage">
       <button type="button" class="carousel-button" data-direction="-1" aria-label="Previous">‹</button>
-      <div class="carousel-track" tabindex="0" aria-label="Mission, research question, idea, and benchmark">
+      <div class="carousel-track" tabindex="0" aria-label="Mission, research question, and idea">
         <article class="slide-card slide-card--centered" id="mission" aria-labelledby="mission-title">
           <div class="content-grid">
             <div>
@@ -114,35 +113,6 @@ title:
               <p>Evaluate reconstruction quality together with parameter efficiency.</p>
             </li>
           </ol>
-        </article>
-
-        <article class="slide-card" id="benchmark" aria-labelledby="benchmark-title">
-          <div class="content-grid">
-            <div>
-              <p class="eyebrow">Benchmark</p>
-              <h3 id="benchmark-title">Diverse Earth data</h3>
-            </div>
-            <div class="prose">
-              <p>Every team receives the same curated global dataset and a common evaluation framework. The initial benchmark brings together three complementary views of the planet.</p>
-            </div>
-          </div>
-          <ul class="slide-steps">
-            <li>
-              <p class="card-kicker">Physical Earth</p>
-              <h4>Water storage anomaly</h4>
-              <p>A time series of total water storage anomaly maps derived from gravity observations.</p>
-            </li>
-            <li>
-              <p class="card-kicker">Earth observation</p>
-              <h4>ESA WorldCover</h4>
-              <p>A high-resolution global land-cover map representing discrete surface classes.</p>
-            </li>
-            <li>
-              <p class="card-kicker">Living Earth</p>
-              <h4>iNaturalist</h4>
-              <p>Biodiversity observations describing the spatial distribution of species.</p>
-            </li>
-          </ul>
         </article>
       </div>
       <button type="button" class="carousel-button" data-direction="1" aria-label="Next">›</button>
@@ -202,6 +172,7 @@ title:
       <button type="button" class="carousel-button" data-direction="-1" aria-label="Previous">‹</button>
       <div class="carousel-track" tabindex="0" aria-label="Event overview, program, and venue">
         <article class="slide-card" aria-labelledby="event-overview-title">
+          <p class="eyebrow">Overview</p>
           <h3 id="event-overview-title">At a glance</h3>
           <dl class="event-facts">
             <div>
@@ -232,17 +203,18 @@ title:
         </article>
 
         <article class="slide-card" id="program" aria-labelledby="program-title">
+          <p class="eyebrow">Program</p>
           <h3 id="program-title">Learn, build, present</h3>
           <ol class="slide-steps">
             <li>
-              <p class="card-kicker">Day 1 · 12:00–16:00</p>
+              <p class="card-kicker">Day 1 · 12:00–20:00</p>
               <h4>Kickoff</h4>
-              <p>Introductory modules, benchmark briefing, team formation, and technical setup.</p>
+              <p>Introductory modules, team formation, hotel check-in, socializing, and dinner.</p>
             </li>
             <li>
-              <p class="card-kicker">Overnight · 16:00–08:00</p>
+              <p class="card-kicker">Overnight · 20:00–08:00</p>
               <h4>Hackathon sprint</h4>
-              <p>Code through the night with mentors on hand and the leaderboard live. Basic sleeping arrangements provided — bring a sleeping bag.</p>
+              <p>Benchmark and technical briefing, then code through the night with mentors on hand and the leaderboard live. Sleeping arrangements provided.</p>
             </li>
             <li>
               <p class="card-kicker">Day 2 · 09:00–12:00</p>
@@ -255,6 +227,7 @@ title:
         <article class="slide-card venue-slide" id="venue" aria-labelledby="venue-title">
           <div class="venue-copy">
             <img class="venue-logo" src="{{ '/assets/images/supporters_white/impulse-white.svg' | relative_url }}" alt="IMPULSE – House for Intellectual Innovation and Creativity">
+            <p class="eyebrow">Venue</p>
             <h3 id="venue-title">A house built for exchanging ideas</h3>
             <p>IMPULSE is the University of Bonn’s House for Intellectual Innovation and Creativity—a place for inspiration, intellectual encounter, and creative collaboration.</p>
             <p>Its mission is grounded in the idea that academic work thrives through receiving and sharing impulses. As a dedicated hub for inter- and transdisciplinary innovation, it is a natural home for teams bringing geospatial science and AI together.</p>
@@ -297,7 +270,7 @@ title:
         <ul class="apply-list">
           <li>Travel costs within Europe (train preferred)</li>
           <li>All food and drinks throughout the event (day and night)</li>
-          <li>Very basic rest and sleeping arrangements at IMPULSE House — the sprint runs through the night; bring a sleeping bag and prepare for little sleep</li>
+          <li>Rest and sleeping arrangements. The sprint runs through the night; prepare for little sleep</li>
           <li>Networking opportunities with fellow participants, mentors, and organizers</li>
         </ul>
       </div>
@@ -394,7 +367,7 @@ title:
   <div class="container">
     <p class="eyebrow">Supported by</p>
     <h2 id="supporters-title">Partners supporting Neural Earth Fields</h2>
-    <p class="section-intro">The benchmark and hackathon are made possible by partners across the University of Bonn and the international geospatial research community.</p>
+    <p class="section-intro">The hackathon is made possible by partners across the University of Bonn and the international geospatial research community.</p>
     <div class="supporter-grid">
       <a class="supporter-card" href="https://www.impulse.uni-bonn.de/de" target="_blank" rel="noopener noreferrer">
         <img src="{{ '/assets/images/supporters/impulse.svg' | relative_url }}" alt="IMPULSE – House for Intellectual Innovation and Creativity" loading="lazy">
