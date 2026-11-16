@@ -382,7 +382,7 @@ title:
         <span>University of Bonn <span aria-hidden="true">↗</span></span>
       </a>
       <a class="supporter-card" href="https://meo-lab.com" target="_blank" rel="noopener noreferrer">
-        <img src="{{ '/assets/images/supporters/Meo_Lab_white.svg' | relative_url }}" alt="Machine Learning in Earth Observation Lab" loading="lazy">
+        <img src="{{ '/assets/images/supporters/meo-lab.png' | relative_url }}" alt="Machine Learning in Earth Observation Lab" loading="lazy">
         <span>MEO Lab <span aria-hidden="true">↗</span></span>
       </a>
       <a class="supporter-card" href="https://taylorgeospatial.org/" target="_blank" rel="noopener noreferrer">
