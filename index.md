@@ -25,6 +25,7 @@ title:
       </div>
       <div class="button-group">
         <span class="button button--disabled" aria-disabled="true">Applications closed</span>
+        <a class="button" href="https://huggingface.co/spaces/taylor-geospatial/neural-earth-fields-competition" target="_blank" rel="noopener noreferrer" aria-label="Competition submission (opens in a new tab)">Competition submission ↗</a>
       </div>
     </div>
   </div>
